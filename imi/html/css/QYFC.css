@@ -1,0 +1,23 @@
+@import url("./sameCSS.css");
+*{
+		margin: 0;
+}
+h1{
+	font-size: 6.2vw;
+}
+h2,p{
+	font-size:4vw;
+}
+#content{
+	background-color:rgba(255,255,255,0.5);
+	border-radius:2%;
+	padding:4%;
+	margin:3%;
+}
+#content p{
+	text-indent: 10%;
+}
+#content img{
+	margin-top: 3%;
+	width:100%;
+}

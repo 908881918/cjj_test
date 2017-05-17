@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>商品详情</title>
+		<link rel="stylesheet" href="css/SPXQ.css"/>
+	</head>
+	<body>
+		<div id="jianjie">
+			<img src="./images/img/goods_pic3.png"/>
+			<div id="roomPrice">
+				<p id="newPrice">¥99.00
+					<del>¥189.00</del>
+					<span id="roomName">阳台海景房</span>
+				</p>
+			</div>
+			<p class="label">舒服睡眠</p>
+			<p class="label">自在生活</p>
+		</div>
+		<div id="xiangqing">
+			<h1>相关说明</h1>
+			<p>房间配备：</p>
+			<p>提供免费快带服务+免费WiFi服务+热水洗浴</p>
+			<p>所有房型均有窗</p>
+			<p>1张床（2mx1.5m）</p>
+		</div>
+		<footer>
+			<table id="share">
+				<tr>
+					<td>
+						<img src="./images/icon/send-out_icon.png"/>发送给朋友</td>
+					<td>
+						<img src="./images/icon/share_icon.png"/>分享到朋友圈</td>
+				</tr>
+			</table>
+			<a href="#Top">
+				<p id="toTop">返回顶部</p>
+			</a>
+			©美心西饼连锁店
+		</footer>
+		<div id="littleButton1">
+			<img id="lastPage" src="./images/icon/yellow_back_arrow.png"/>
+			<a href="./index.html">
+				<img id="indexPage" src="./images/icon/main_icon.png"/>
+			</a>
+		</div>
+		<div id="littleButton2">
+			<div>
+				<p>
+					<img class="larger" src="./images/icon/public-concern_icon.png" /><br/>关注公众号</p>
+			</div>
+			<div>
+				<p>
+					<img class="middle" src="./images/icon/small-navigation.png" /><br/>导航到店</p>
+			</div>
+			<div>
+				<p><img class="larger" src="./images/icon/One-key-dialing.png" /><br/>一键拨号</p>
+			</div>
+		</div>
+		<script>
+			var lastPage=document.getElementById("lastPage");
+			lastPage.onclick=getBack;
+			function getBack(e){
+				if(document.location.hash){
+					window.history.go(-2);
+				}
+				      else window.history.back();
+			}
+		</script>
+	</body>
+</html>

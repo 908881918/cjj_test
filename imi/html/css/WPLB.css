@@ -1,0 +1,59 @@
+@import url("sameCSS2.css");
+#indexPage{
+	right: 70%;
+}
+body{
+	margin: 0%;
+}
+:link,:visited{
+	text-decoration: none;
+}
+nav{
+	float: left;
+	margin-bottom: 30%;
+}
+nav a{
+	width: 100%;
+	float: left;
+}
+nav a:nth-child(odd){
+	background-color: rgb(227,228,232);
+}
+nav a:nth-child(even){
+	background-color: rgb(240,238,239);
+}
+nav div{
+	width: 71.0228%;
+	float: left;
+	position: relative;
+	right: 8.25%;
+	overflow: hidden;
+}
+nav a:nth-child(odd) div{
+	background: url(../images/icon/XJS.png) no-repeat left;
+	background-size: contain;
+}
+nav a:nth-child(even) div{
+	background: url(../images/icon/XJQ.png) no-repeat left;
+	background-size: contain;
+}
+nav img{
+	width: 28.9772%;
+	float: left;
+}
+nav h1,nav p{
+	margin: 0;
+	position: relative;
+	left: 17%;
+}
+nav h1{
+	font-size: 4.6vw;
+	margin-top: 2.5%;
+	margin-bottom: 1.5%;
+	color: rgb(124,124,124);
+}
+nav p{
+	font-size: 3.69vw;
+	margin-bottom: 10.5%;
+	color: rgb(166,165,164);
+}

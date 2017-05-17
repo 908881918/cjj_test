@@ -1,0 +1,58 @@
+@import url("./sameCSS.css");
+#jianjie{
+	background-color: rgba(255,255,255,0.5);
+	padding-bottom:1.6ex;
+}
+#jianjie img{
+	width:100%;
+}
+#roomPrice{
+	margin: 0.8em 3vw 1.6ex 3vw;
+	border-bottom:solid white thin;
+	padding-bottom: 0.8em;
+}
+#newPrice{
+	font-size: 6vw;
+	color: red;
+	margin: 0;
+	margin-right: 2%;
+}
+#jianjie del{
+	font-size: 3.5vw;
+	margin: 0;
+	color: white;
+}
+#roomName{
+	font-size: 4.8vw;
+	font-weight: bold;
+	color: white;
+	line-height: 1.7em;
+	float: right;
+}
+.label{
+	display: inline;
+	font-size:3.5vw;
+	margin-left: 3.5vw;
+}
+#xiangqing{
+	background-color: rgba(255,255,255,0.5);
+	margin:3vw;
+	margin-bottom: 8vw;
+	font-size: 4vw;
+	padding-bottom: 1.4em;
+}
+#xiangqing h1{
+	font-size: 4.2vw;
+	border-bottom: dotted thin white;
+	font-weight:lighter;
+	padding: 0.5em;
+	padding-top: 0.7em;
+	margin: 0;
+}
+#xiangqing p{
+	font-size: 3.55vw;
+	margin: 0;
+	margin-top: 0.6em;
+	margin-left: 1.6ex;
+	font-weight: bold;
+}

@@ -1,0 +1,61 @@
+@import url("sameCSS2.css");
+*{
+	margin: 0;
+}
+:visited,:link{
+	text-decoration: none;
+}
+#list{
+	float: left;
+	padding-top: 2.3em;
+	background-color: rgb(235,235,235);
+	width: 25%;
+	height: 100vh;
+	font-size: 4.2vw;
+	text-align: center;
+}
+#list p{
+	line-height: 2.9em;
+}
+#JT{
+	background-color: white;
+}
+#roomList,a,a img{
+	margin: 0;
+	float: left;
+}
+#roomList{
+	width: 75%;
+}
+#roomList h1{
+	margin: 0;
+	padding-left: 6%;
+	font-size: 4vw;
+	line-height: 2.39em;
+	background-color: rgb(247,247,247);
+	border-bottom:outset 1px rgb(231,231,231) ;
+}
+a{
+	width:92%;
+	margin:0% 4%;
+	padding:4% 0%;
+	border-bottom: thin solid rgb(237,237,237);
+}
+a img{
+	width: 28%;
+	margin-right: 4%;
+}
+a h2{
+	font-size: 4.3vw;
+	color: rgb(89,89,89);
+	margin-bottom: 1ex;
+}
+.roomPrice{
+	color: red;
+	font-size: 4.2vw;
+	margin-bottom: 0.6em;
+}
+.label{
+	font-size:3.5vw;
+	color: rgb(124,124,124);
+}

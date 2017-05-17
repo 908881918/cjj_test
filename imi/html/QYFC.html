@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>企业风采</title>
+		<link rel="stylesheet" href="./css/QYFC.css"/>
+	</head>
+	<body>
+		<div id="content">
+		<h1>公司简介</h1>
+		<h2>2014-10-08</h2>
+		<img src="./images/img/modle_detail_pic1.png"/>
+		<p>
+			1993年第一块鲜亮醒目的“元祖红”招牌在四川北路竖起，由天才营销大师张秀琬女士精心培育的台湾元祖食品
+			正式进驻上海、进驻中国大陆，上海元祖食品有限公司从此诞生。今天，这块元祖红招牌已遍布中国各大城市，
+			并成为家喻户晓的“精致礼品名家代言者”。
+		</p>
+		<img src="./images/img/modle_detail_pic2.png"/>
+		</div>
+		<footer>
+			<table id="share">
+				<tr>
+					<td>
+						<img src="./images/icon/send-out_icon.png"/>发送给朋友</td>
+					<td>
+						<img src="./images/icon/share_icon.png"/>分享到朋友圈</td>
+				</tr>
+			</table>
+			<a href="#Top">
+				<p id="toTop">返回顶部</p>
+			</a>
+			©美心西饼连锁店
+		</footer>
+		<div id="littleButton1">
+			<img id="lastPage" src="./images/icon/yellow_back_arrow.png"/>
+			<a href="./index.html">
+				<img id="indexPage" src="./images/icon/main_icon.png"/>
+			</a>
+		</div>
+		<div id="littleButton2">
+			<div>
+				<p>
+					<img class="larger" src="./images/icon/public-concern_icon.png" /><br/>关注公众号</p>
+			</div>
+			<div>
+				<p>
+					<img class="middle" src="./images/icon/small-navigation.png" /><br/>导航到店</p>
+			</div>
+			<div>
+				<p><img class="larger" src="./images/icon/One-key-dialing.png" /><br/>一键拨号</p>
+			</div>
+		</div>
+		<script>
+			var lastPage=document.getElementById("lastPage");
+			lastPage.onclick=getBack;
+			function getBack(e){
+				if(document.location.hash){
+					window.history.go(-2);
+				}
+				      else window.history.back();
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<link rel="stylesheet" href="./css/SPLB.css"/>
+	</head>
+	<body>
+		<div id="list">
+			<p id="JT">家庭房</p>
+			<p id="BZ">标准房</p>
+			<p id="DR">单人房</p>
+			<p id="TJ">特价大床</p>
+			<p id="HH">豪华大床</p>
+		</div>
+		<div id="roomList">
+			<div id="jiating">
+				<h1>家庭房</h1>
+				<a href="">
+					<img src="./images/img/goods_pic1.gif"/>
+					<h2>亲子双人房</h2>
+					<p class="roomPrice">¥108.00</p>
+					<p class="label">够大 舒服享受</p>
+				</a>
+				<a href="./SPXQ.html">
+					<img src="./images/img/goods_pic2.gif"/>
+					<h2>阳台海景房</h2>
+					<p class="roomPrice">¥99.00</p>
+					<p class="label">舒服睡眠 自在生活</p>
+				</a>
+			</div>
+			<div id="biaozhun" hidden>
+				<h1>标准房</h1>
+				<p>暂无</p>
+			</div>
+			<div id="danren" hidden>
+				<h1>单人房</h1>
+				<p>暂无</p>
+			</div>
+			<div id="tejia" hidden>
+				<h1>特价大床房</h1>
+				<p>暂无</p>
+			</div>
+			<div id="haohua" hidden>
+				<h1>豪华大床房</h1>
+				<p>暂无</p>
+			</div>
+		</div>
+		<div id="littleButton1">
+			<img id="lastPage" src="./images/icon/yellow_back_arrow.png"/>
+			<a href="./index.html">
+				<img id="indexPage" src="./images/icon/main_icon.png"/>
+			</a>
+		</div>
+		<div id="littleButton2">
+			<div>
+				<p>
+					<img class="larger" src="./images/icon/public-concern_icon.png" /><br/>关注公众号</p>
+			</div>
+			<div>
+				<p>
+					<img class="middle" src="./images/icon/small-navigation.png" /><br/>导航到店</p>
+			</div>
+			<div>
+				<p><img class="larger" src="./images/icon/One-key-dialing.png" /><br/>一键拨号</p>
+			</div>
+		</div>
+		<script>
+			var lastPage=document.getElementById("lastPage");
+			lastPage.onclick=getBack;
+			function getBack(e){
+				if(document.location.hash){
+					window.history.go(-2);
+				}
+				      else window.history.back();
+			}
+		</script>
+		<script src="./js/focus.js" ></script>
+	</body>
+</html>

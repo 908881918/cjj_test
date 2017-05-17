@@ -1,0 +1,312 @@
+*{
+	margin: 0%;
+	padding: 0%;
+}
+:link,:visited{
+	text-decoration: none;
+}
+body{
+	overflow: hidden;
+	margin: 40px 0;
+}
+header{
+	z-index: 7;
+	position: fixed;
+	top: 0vw;
+	width: 100%;
+	height: 40px;
+	background-color: rgb(249,249,249);
+	border-bottom: thin solid lightgray;
+}
+header img{
+	position: absolute;
+	top: 0.6em;
+	width: 8.6px;
+}
+header div{
+	text-align: center;
+}
+header p{
+	text-align: center;
+	display: inline-block;
+	margin: 0 4%;
+	line-height: 40px;
+	font-size: 16px;
+}
+header a{
+	color: black;
+	float: right;
+	position: relative;
+	top: 0.6em;
+	font-size: 16px;
+}
+#theBody{
+	width: 100%;
+	overflow: hidden;
+}
+#theBody ul{
+	width: 200vw;
+	position: relative;
+	transition: right 500ms linear 0ms;
+	right: 0vw;
+}
+#goodsPart,#msgPart{
+	list-style: none;
+	width: 100vw;
+	float: left;
+	overflow-y: scroll;
+	vertical-align: top;
+}
+#rollLMod{
+	width: 100%;
+	overflow: hidden;
+}
+#rollLMod ul{
+	list-style-type: none;
+	width: 999999px;
+	position: relative;
+	transition: right 500ms linear 0ms;
+	right: 0;
+}
+#rollLMod img{
+	width: 100vw;
+}
+#rollButton{
+	z-index: 2;
+	text-align: center;
+	position: relative;
+	bottom: 1.5em;
+}
+#rollButton ul{
+	list-style-type: none;
+	display: inline-block;
+	border-radius: 8%/46%;
+	background-color: rgba(255,255,255,0.6);
+	width: auto;
+	height: 11px;
+}
+#rollButton li{
+	display: inline-block;
+	padding: 3px;
+	margin: 2.5px 2.5px;
+	background-color: gray;
+	border-radius: 50%/50%;
+	vertical-align: top;
+}
+#rollButton li:first-child{
+	background-color: red;
+}
+#rollLMod img{
+	float: left;
+}
+#goodsMsgByWord{
+	display: inline-block;
+	width: 80%;
+	font-size: 12px;
+}
+#goodsMsgByWord tr:first-child td{
+	font-size: 16px;
+	height: 2.5em;
+	vertical-align: top;
+	border-right: thin solid lightgrey;
+}
+#price{
+	color: red;
+	font-size: 16px;
+	padding-bottom: 0.6em;
+}
+#collection{
+	width: 3em;
+	float: right;
+	margin-right: 5%;
+	display: inline-block;
+	font-size: 12px;
+	text-align: center;
+}
+#collection img{
+	width: 24px;
+}
+#payChoose{
+	padding: 3% 0;
+	background-color: rgb(250,250,250);
+	font-size: 12px;
+	border-bottom: thick solid lightgrey;
+}
+#payChoose img{
+	width: 12px;
+	vertical-align: middle;
+}
+#payChoose *,#shopName *,#score *{
+	display: inline-block;
+}
+#payChoose div{
+	width: 30%;
+}
+#shopName,#score{
+	color: gray;
+	padding: 9px 10px;
+	border-bottom: thin solid lightgray;
+}
+#shopName p{
+	font-size: 12px;
+	vertical-align: middle;
+}
+#shopName img{
+	width: 17px;
+	vertical-align: top;
+}
+#shopName a{
+	line-height: 22px;
+	float: right;
+	font-size: 12px;
+	color: white;
+	background-color: rgb(255,34,80);
+	border-radius: 10%/20%;
+	padding: 0 8px;
+}
+#score p{
+	text-align: center;
+	width: 30%;
+	font-size: 10px;
+	color: gray;
+}
+.score{
+	color: red;
+	margin: 0 1%;
+}
+.scoreByWord{
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+}
+#msgHead{
+	border-bottom: thin solid lightgray;
+	width: 100%;
+	border-collapse: collapse;
+}
+#msgHead td{
+	text-align: center;
+	line-height: 50px;
+	border-right: thin solid black;
+}
+.onClick{
+	color: red;
+	border-bottom: thin solid red;
+}
+#imgPart img{
+	width: 100%;
+	vertical-align: top;
+}
+#wordPart{
+	border-collapse: collapse;
+	width: 94%;
+	margin: 0 3%;
+	font-size: 12px;
+}
+#wordPart tr{
+	border-bottom: thin solid lightgrey;
+}
+#wordPart td:nth-child(2){
+	text-align: right;
+	line-height: 30px;
+}
+footer{
+	z-index: 7;
+	background-color: white;
+	position: fixed;
+	bottom: 0vw;
+	width: 100%;
+}
+footer table{
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+	border-collapse: collapse;
+}
+footer img{
+	width: 20px;
+}
+#cart{
+	background-color: rgb(255,109,2);
+	color: white;
+	font-weight: bold;
+}
+#pay{
+	background-color: rgb(223,32,39);
+	color: white;
+	font-weight: bold;
+}
+#mainGoodsMsg,#goodsColor,#goodsSize{
+	padding: 2% 1%;
+	border-bottom: thin solid gray;
+}
+#goodsImg{
+	width: 20%;
+	border-radius: 10%;
+}
+#ksxz{
+	width: 100%;
+	z-index: 9;
+	background-color: white;
+	position: fixed;
+	bottom: -200vh;
+}
+#close{
+	width: 20px;
+	float: right;
+	margin: 1%;
+}
+#ksMsg{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	font-size: 14px;
+	margin: 0 2%;
+	line-height: 20px;
+	padding-bottom: 2.5em;
+}
+#goodsColor *,#goodsSize *,#goodsNum>p:first-child{
+	display: inline-block;
+	font-size: 14px;
+	margin: 1em 1%;
+}
+.onFocus{
+	color: white;
+	background-color: red;
+	padding: 1%;
+	border-radius: 30%;
+}
+#goodsNum *{
+	display: inline-block;
+	font-size: 14px;
+}
+#numControl{
+	border: thin solid gray;
+	float: right;
+	margin: 1em 1%;
+}
+#numValue{
+	text-align: center;
+	width: 60px;
+	border-right: thin solid gray;
+	border-left: thin solid gray;
+}
+#add,#reduce{
+	width: 20px;
+	text-align: center;
+}
+#putInCart,#toPay{
+	text-align:  center;
+	background-color: red;
+	font-size: 16px;
+	padding: 1em;
+	color: white;
+}
+#backGround{
+	z-index: 8;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	bottom: 0vw;
+}

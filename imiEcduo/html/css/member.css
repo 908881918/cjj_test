@@ -1,0 +1,128 @@
+@import url("./footer.css");
+#topPart{
+	background: url(../images/icon/header_bg.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+#myMsg>a{
+	margin: 0 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+#myMsg{
+	padding: 20px 10px 0 10px;
+}
+#head{
+	width: 68px;
+	border: solid thin rgb(160,171,199);
+	border-radius: 50%/50%;
+	background-color: rgb(160,171,199);
+}
+#theName{
+	position: relative;
+	bottom: 1em;
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 18px;
+	color: white
+}
+#gzml,#account{
+	font-size: 11px;
+}
+
+#setAndCode{
+	float: right;
+}
+#setAndCode img{
+	width: 20px;
+	background: none;
+	border: none;
+}
+#account{
+	margin-right: 10px;
+	float: right;
+	color: gray;
+}
+#aboutGoods{
+	margin-top: 27%;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	border-collapse: collapse;
+	background-color: rgba(0,0,0,0.2);
+}
+#aboutGoods a{
+	display: inline-block;
+}
+#aboutGoods td:not(:last-child){
+	width: 25%;
+	border-right: thin solid white;
+}
+#aboutGoods img{
+	width: 2em;
+}
+#aboutGoods p{
+	color: white;
+}
+#myList,.otherFunction{
+	display: inline-block;
+	width: 98%;
+	border-bottom: thin solid lightgray;
+	padding: 2% 1%;
+	font-size: 15px;
+	color: black;
+}
+#myList img,.otherFunction img{
+	display: inline-block;
+	vertical-align: bottom;
+	width: 1.5em;
+	margin-right: 1%;
+}
+#myGoodsMgs{
+	padding: 2% 0;
+	margin-bottom: 4%;
+	float: left;
+	width: 100%;
+	border-bottom: thin solid lightgray;
+	text-align: center;
+}
+#myGoodsMgs a{
+	float: left;
+	width: 20%;
+	color: gray;
+	font-size: 14px;
+}
+#myGoodsMgs img{
+	width: 1.6em;
+}
+.goodsNum{
+	width: 20px;
+	margin: 0 auto;
+	position: relative;
+}
+span{
+	position: absolute;
+	top: -0.7em;
+	right: -1em;
+	font-size: 10px;
+	width: 1em;
+	border: solid thin rgb(255,144,0);
+	border-radius: 60%/50%;
+	background-color: rgb(255,144,0);
+	color: white;
+	font-weight: bold;
+}
+.otherFunction:first-child{
+	border-top: thin solid lightgray;
+}
+.otherFunction p{
+	float: right;
+	color: lightgray;
+}
+@media only screen and (min-width: 700px){
+	body{
+		width: 700px;
+		margin: 0 auto;
+		margin-bottom: 13%;
+	}
+}

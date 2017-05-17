@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>物品列表</title>
+		<link rel="stylesheet" href="./css/WPLB.css"/>
+	</head>
+	<body>
+		<nav>
+			<a href="" class="SPLJ css1">
+				<img src="./images/img/modle_list_pic1.png"/>
+				<div>
+					<h1>奶黄系列</h1>
+					<p>由外而内的甘香幼滑，一份···</p>
+				</div>
+			</a>
+			<a href="" class="SPLJ css2">
+				<img src="./images/img/modle_list_pic2.png"/>
+				<div>
+					<h1>冰皮系列</h1>
+					<p>有别于传统月饼，冰皮月饼入···</p>
+				</div>
+			</a>
+			<a href="" class="SPLJ css1">
+				<img src="./images/img/modle_list_pic3.png"/>
+				<div>
+					<h1>富贵系列</h1>
+					<p>将传统兴现在，完美融合，高···</p>
+				</div>
+			</a>
+			<a href="" class="SPLJ css2">
+				<img src="./images/img/modle_list_pic4.png"/>
+				<div>
+					<h1>传统系列</h1>
+					<p>款款选材考究，经师傅匠心···</p>
+				</div>
+			</a>
+		</nav>
+		<div id="littleButton1">
+			<img id="lastPage" src="./images/icon/yellow_back_arrow.png"/>
+			<a href="./index.html">
+				<img id="indexPage" src="./images/icon/main_icon.png"/>
+			</a>
+		</div>
+		<div id="littleButton2">
+			<div>
+				<p>
+					<img class="larger" src="./images/icon/public-concern_icon.png" /><br/>关注公众号</p>
+			</div>
+			<div>
+				<p>
+					<img class="middle" src="./images/icon/small-navigation.png" /><br/>导航到店</p>
+			</div>
+			<div>
+				<p><img class="larger" src="./images/icon/One-key-dialing.png" /><br/>一键拨号</p>
+			</div>
+		</div>
+		<script>
+			var lastPage=document.getElementById("lastPage");
+			lastPage.onclick=getBack;
+			function getBack(e){
+				if(document.location.hash){
+					window.history.go(-2);
+				}
+				      else window.history.back();
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+body,footer{
+	width: 100%;
+}
+footer{
+	z-index: 9;
+	text-align: center;
+	position: fixed;
+	bottom: 0%;
+	background-color: white;
+	padding-top: 0.5%;
+	
+}
+footer a{
+	float: left;
+	width: 20%;
+	color: gray;
+}
+footer img{
+	vertical-align: middle;
+	width: 27px;
+}
+footer a:nth-child(4) img{
+	height: 27px;
+}
+*{
+	font-weight: normal;
+	margin: 0%;
+	padding: 0%;
+}
+:visited,:link{
+	text-decoration: none;
+}
+body{
+	margin-bottom: 15%;
+	font-size: 14px;
+}

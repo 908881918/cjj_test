@@ -1,0 +1,199 @@
+@import url("./footer.css");
+#rollLMod li{
+	float: left;
+}
+#header{
+	width: 100%;
+	padding-bottom: 1.2%;
+	text-align: center;
+}
+#index,#search,#signIn,#news a,#newsRoll,nav a,#theTitle *,#search img{
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+#index{
+	width: 9.48%;
+}
+#index img,#signIn img,#activityNav img,.goods img{
+	width: 100%;
+}
+#search{
+	width: 80.5214%;
+	border: thin solid lightgray;
+	border-radius: 1.6%/20%;
+	text-align: left;
+}
+#search input{
+	outline: rgba(255,255,255,0);
+	border: rgba(255,255,255,0);
+}
+#search img{
+	margin: 1% 0% 1% 2%;
+	width: 14px;
+}
+#signIn{
+	width:4%
+}
+#rollLMod{
+	width: 100%;
+	overflow: hidden;
+}
+#rollLMod ul{
+	list-style-type: none;
+	width: 999999px;
+	position: relative;
+	transition: right 500ms linear 0ms;
+	right: 0;
+}
+#rollLMod img{
+	width: 100vw;
+}
+#rollButton{
+	z-index: 2;
+	text-align: center;
+	position: relative;
+	bottom: 1.5em;
+}
+#rollButton ul{
+	list-style-type: none;
+	display: inline-block;
+	border-radius: 8%/46%;
+	background-color: rgba(255,255,255,0.6);
+	width: auto;
+	height: 11px;
+}
+#rollButton li{
+	display: inline-block;
+	padding: 3px;
+	margin: 2.5px 2.5px;
+	vertical-align: top;
+	background-color: gray;
+	border-radius: 50%/50%;
+}
+#rollButton li:first-child{
+	background-color: red;
+}
+nav{
+	text-align: center;
+	border-bottom: solid thin rgb(204,204,204);
+	padding-bottom: 1%;
+}
+nav a{
+	width: 18%;
+	color: black;
+	font-size: 12px;
+}
+nav img{
+	width:40px;
+}
+#news>a{
+	width: auto;
+	margin-right: 2%;
+	padding: 0.5%;
+	border-right: thin solid rgb(204,204,204);
+}
+#news img{
+	width: 75px;
+}
+#newsRoll{
+	width: auto;
+	height: 3em;
+	overflow: hidden;
+}
+#newsRoll ul{
+	height: 999999;
+	list-style-type: none;
+	position: relative;
+	transition: bottom 500ms linear 0ms;
+	bottom: 0;
+}
+#newsRoll a{
+	font-size: 12px;
+	line-height: 3em;
+	width: 100%;
+	color: black;
+}
+.goodsMenu,.goodsMenu tr:not(:first-child) img{
+	width: 100%;
+	border-collapse: collapse;
+}
+#hotIcon{
+	width: 27px;
+	vertical-align: middle;
+	margin: 0 0 1% 1%;
+}
+.menuTitle{
+	line-height: 3em;
+	border-top: thick solid lightgray;
+	border-bottom: solid thin lightgrey;
+}
+#activity h1{
+	border-top: medium solid lightgray;
+	padding: 2% 2%;
+	width: 96%;
+	font-size: 14px;
+}
+#activity h1 a{
+	color: gray;
+	float: right;
+}
+#activityNav>a:not(:last-child),#activityNav div{
+	display: inline-block;
+	vertical-align: top;
+	width: 49%;
+}
+aside{
+	width: 27px;
+	background-color: red;
+	text-align: center;
+	position: fixed;
+	top: 10.9%;
+	padding: 1% 0;
+}
+aside a,aside img{
+	color: white;
+	font-size: 16px;
+}
+#theTitle{
+	font-size: 18px;
+	margin: 3.1% 0 1.87% 0;
+	text-align: center;
+}
+#theTitle p:nth-child(2){
+	width: 31%;
+	color: gray;
+}
+.theLine{
+	display: inline-block;
+	border-bottom: solid thin gray;
+	width: 30%;
+	margin: 0% auto;
+}
+.goods{
+	display: inline-block;
+	margin: 0,0,1%,1%;
+	width: 49%;
+	vertical-align: top;
+}
+.goods p:nth-child(2){
+	height: 2.5em;
+	color: gray;
+	font-size: 14px;
+	margin: 1%;
+}
+.price{
+	margin: 4.1%;
+	font-size: 18px;
+	color: red;
+}
+@media only screen and (min-width: 640px){
+	body{
+		background-color: lightgray;
+	}
+	#theBody,#rollLMod img{
+		background-color: white;
+		width: 700px;
+		margin: 0 auto;
+	}
+}

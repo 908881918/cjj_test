@@ -1,0 +1,78 @@
+@import url("./footer.css");
+header{
+	width: 100%;
+	position: fixed;
+}
+#theHeader{
+	width: 100%;
+	height: 39px;
+	padding: 0 10px;
+	border-bottom: thin solid lightgray;
+	background-color: white;
+}
+#menuList,#goodsList,body{
+	color: black;
+	float: left;
+}
+#back,#search,#search input,#search img{
+	display: inline-block;
+	vertical-align: middle;
+}
+#back{
+	width: 14px;
+	margin-right: 22px;
+}
+#search{
+	margin-top: 5px;
+	width: 82%;
+	border: thin solid lightgray;
+	border-radius: 1%/10%;
+}
+#search input{
+	line-height: 30px;
+	outline:none;
+	border: rgba(255,255,255,0);
+	font-size: 16px;
+}
+#search img{
+	width: 14px;
+}
+#menuList{
+	width: 92px;
+	text-align: center;
+	background-color: rgb(248,248,248);
+}
+#menuList p{
+	padding: 10% 0;
+	border: thin solid lightgray;
+	border-top:none;
+}
+.onFocus{
+	background-color: white;
+	color: deeppink;
+}
+#goodsList{
+	width: 100%;
+}
+.kindList{
+	margin: 50px 0 0 92px;
+}
+.kindList h1{
+	margin: 10px 0;
+	margin-left: 3%;
+	color: gray;
+	text-align: left;
+	font-size: 13px;
+}
+.kindList a{
+	display: inline-block;
+	text-align: center;
+	color: black;
+	margin-left: 3%;
+	width: 28%;
+	font-size: 12px;
+	
+}
+.kindList img{
+	width: 100%;
+}

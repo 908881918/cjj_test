@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+}
+table{
+	width: 90%;
+	margin: 5% 0%;
+	border-collapse: collapse;
+	text-align: center;
+	font-size: 4vw;
+	line-height: 1.6em;
+	table-layout: fixed;
+	font-weight: bold;
+}
+caption{
+	font-size: 6vw;
+	color: darkblue;
+}
+tr:first-child th:not(:first-child){
+	border-bottom: solid medium black;
+}
+tr:not(:first-child) th{
+	border-right: solid medium black;
+}
+td:nth-child(3n+1){
+	border-right: solid medium black;
+}
+td:not(:nth-child(3n+1)){
+	border-right: solid thin red;
+}
+tr:nth-child(3n+1) td{
+	border-bottom: solid medium black;
+}
+tr:not(:nth-child(3n+1)) td{
+	border-bottom: solid thin red;
+}
+#msg{
+	width: 100%;
+	color: red;
+	text-align: center;
+	font-size: 5vw;
+	margin-bottom: 3%;
+}
+#getNum button{
+	width: 14%;
+	margin-left: 4%;
+	margin-bottom: 3%;
+	font-size: 5vw;
+}
+#functionKey{
+	width: 90%;
+	margin: 4%;
+}
+#functionKey button{
+	width: 18%;
+	margin-left: 1%;
+	line-height: 2em;
+	font-size: 3vw;
+}
+td{
+	overflow: hidden;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>首页</title>
+		<link rel="stylesheet" href="./css/index.css"/>
+	</head>	
+	<body>
+		<nav>
+			<a href="./SPLB.html">
+				<img src="./images/icon/all_goods_icon.png"/>
+				<p>全部商品</p>
+			</a>
+			<a href="./QYFC.html">
+				<img src="./images/icon/etp-itrc_icon.png"/>
+				<p>企业风采</p>
+				
+			</a>
+			<a href="">
+				<img src="./images/icon/News-information_icon.png"/>
+				<p>新闻资讯</p>
+			</a>
+			<a href="">
+				<img src="./images/icon/merchant-join_icon.png"/>
+				<p>招商加盟</p>
+			</a>
+			<a href="">
+				<img src="./images/icon/drafting_icon.png"/>
+				<p>招贤纳士</p>
+			</a>
+			<a href="">
+				<img src="./images/icon/contact-us_icon.png"/>
+				<p>联系我们</p>
+			</a>
+		</nav>
+		<ul>
+			<div id="hidden" style="visibility: hidden;">
+				<li>
+					<img src="./images/icon/code_icon.png"/>
+				</li>
+				<li>
+					<img src="./images/icon/phone-call_icon.png"/>
+				</li>
+				<li>
+					<img src="./images/icon/navigation_icon.png"/>
+				</li>
+			</div>
+				<li>
+					<img id="openHidden" src="./images/icon/red_add_icon.png"/>
+				</li>
+		</ul>
+		<script>
+			var hidden=document.getElementById("hidden").style;
+			document.getElementById("openHidden").onclick=open;
+			function open(e){
+				if(hidden.visibility=="hidden"){
+					hidden.removeProperty("visibility");
+					e.target.src="./images/icon/red_cancel_icon.png";
+				}
+			else{
+				hidden.visibility="hidden";
+				e.target.src="./images/icon/red_add_icon.png";
+			}
+			}
+		</script>
+	</body>
+</html>

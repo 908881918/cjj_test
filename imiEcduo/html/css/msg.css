@@ -1,0 +1,29 @@
+@import url("./footer.css");
+header{
+	background-color: rgb(249,249,249);
+	border-bottom: thin solid lightgray;
+}
+header img{
+	position: absolute;
+	top: 0.7em;
+	float: left;
+	width: 40px;
+	margin-left: 3%;
+}
+header h1{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-size: 18px;
+	line-height: 37px;
+	color: deeppink;
+	font-weight: bolder;
+	vertical-align: bottom;
+}
+#emptyMsg{
+	text-align: center;
+	background-color: rgb(249,249,249);
+	padding: 2% 0 4% 0;
+	font-size: 18px;
+	color: gray;
+}

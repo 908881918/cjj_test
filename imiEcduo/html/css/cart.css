@@ -1,0 +1,118 @@
+@import url("./footer.css");
+header,header img,.goodsMsgDetail a img,.goodsMsg{
+	width: 100%;
+}
+header,.goodsMsg h1,.goodsMsgDetail{
+	border-bottom: thin solid lightgray;
+}
+header{
+	text-align: center;
+	padding: 0.6% 0%;
+}
+header *,.toPay *,.num{
+	display: inline-block;
+	vertical-align: middle;
+}
+header a:first-child{
+	position: absolute;
+	float: left;
+	margin-left: 10px;
+	width: 40px;
+}
+header a:last-child{
+	position: relative;
+	bottom: 1.5em;
+	width: 17px;
+	margin-right: 10px;
+	float: right;
+}
+header h1{
+	width: 100%;
+	font-size: 18px;
+	color: rgb(253,116,137);
+	font-weight: bold;
+}
+#emptyCart,#emptyCart a{
+	font-size: 18px;
+	text-align: center;
+	padding: 1% 0;
+	background-color: rgb(240,240,240);
+	color: black;
+}
+.goodsMsg{
+	border-top: thick solid lightgray;
+	border-bottom: thick solid lightgray;
+}
+.goodsMsg h1{
+	padding-left: 0.3em;
+	font-size: 14px;
+	line-height: 38px;
+}
+.goodsMsgDetail{
+	margin: 0.3em;
+	padding-bottom: 1em;
+}
+.goodsMsgDetail a img{
+	width: 66px;
+	display: inline-block;
+}
+.wordDetail{
+	margin-left: 0.3em;
+	display: inline-block;
+	font-size: 10px;
+	vertical-align: top;
+	color: #b2b2b2;
+	line-height: 17px;
+}
+.goodsName{
+	height: 34px;
+}
+.num{
+	vertical-align: top;
+	margin-left: 1em;
+}
+.unitPrice,.totalPrice{
+	display: inline-block;
+	color: red;
+}
+.add,.reduce{
+	outline: none;
+	width: 18px;
+	height: 18px;
+	background-color: white;
+	border: thin solid #b2b2b2;
+	vertical-align: top;
+}
+input{
+	vertical-align: top;
+	font-size: 10px;
+	text-align: center;
+	height: 14px;
+	width: 69px;
+}
+.delGoods{
+	float: right;
+	width: 14px;
+}
+.toPay{
+	text-align: right;
+	margin: 0.6em 0.3em 0.6em 0;
+}
+.pay{
+	width: 60px;
+	text-align: center;
+	background-color: red;
+	color: white;
+	border-radius: 5%/10%;
+	padding: 0.3em 0;
+	font-weight: bold;
+}
+@media only screen and (min-width: 700px) {
+	.goodsMsgDetail{
+		width: 92%;
+		margin: 0.3em auto;
+	}
+	.toPay{
+		margin-right: 4%;
+	}
+}
