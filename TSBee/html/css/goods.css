@@ -5,6 +5,9 @@
 :link,:visited{
 	text-decoration: none;
 }
+:focus{
+	outline: none;
+}
 p{
 	-webkit-margin-before: 0px;
 	-webkit-margin-after: 0px;
@@ -67,4 +70,68 @@ header *{
 	text-align: right;
 	background-image: url(../img/icon/bg_flbtn.png);
 	background-repeat: no-repeat;
+}
+#seachHead{
+	width: 1000px;
+	background-image: url(../img/icon/header_bg.png);
+	background-repeat: no-repeat;
+}
+#seachHead>*{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 12px;
+}
+#seachHead a{
+	color: black;
+}
+#seachHead>a{
+	margin-right: 76px;
+}
+#searhPart{
+	width: 377px;
+	height: 2.4em;
+	border: solid thin grey;
+	border-radius: 5px;
+	background-color: white;
+	overflow: hidden;
+	margin-right: 50px;
+}
+#searhPart input{
+	vertical-align: top;
+	line-height: 2.4em;
+	width: 291px;
+	border: none
+}
+#searhPart a{
+	display: inline-block;
+	height: 2.4em;
+	width: 80px;
+	background-color: white;
+	background-image: url(../img/icon/hearder_search_btn.png);
+	background-repeat: no-repeat;
+}
+#myAcc,#car{
+	width: 9.5em;
+	line-height: 2.5em;
+	background-image: url(../img/icon/hearder_mbct_li.png);
+	background-repeat: no-repeat;
+	text-align: center;
+	vertical-align: 0.5em;
+	color: black;
+}
+#car{
+	width: 12em;
+	background-image: url(../img/icon/hearder_cart_li.png);
+	background-repeat: no-repeat;
+}
+
+
+@media only screen and (min-width: 1000px){
+	header{
+		width: 100vw;
+	}
+	#theBody{
+		width: 1000px;
+		margin: 0 auto;
+	}
 }
