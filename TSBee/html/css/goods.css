@@ -124,6 +124,22 @@ header *{
 	background-image: url(../img/icon/hearder_cart_li.png);
 	background-repeat: no-repeat;
 }
+#allCate>*{
+	width: 200px;
+	vertical-align: top;
+}
+#allCate li{
+	background-image: url(../img/icon/index_cate_bg.png);
+	background-repeat: repeat-y;
+	padding: 0 1em;
+	font-size: 12px;
+	line-height: 2.5em;
+	border-bottom: dotted thin #dec375;
+	color: red;
+}
+#allCate a{
+	color: #b70707;
+}
 
 
 @media only screen and (min-width: 1000px){
