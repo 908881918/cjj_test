@@ -1,3 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+:link,:visited{
+	text-decoration: none;
+}
+p{
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
 /*
  * 放大镜样式
  */
@@ -18,3 +31,40 @@
 .tb-thumb li div{border:1px solid #CDCDCD;}
 div.zoomDiv{z-index:999;position:absolute;top:0px;left:0px;width:200px;height:200px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
 div.zoomMask{position:absolute;background:url("images/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
+
+header{
+	height: 16px;
+	background-color: rgb(247,247,247);
+	font-size: 12px;
+	width: 1000px;
+	border-bottom: solid thin lightgray;
+	padding: 7px 0px;
+}
+header *{
+	display: inline-block;
+	color: rgb(107,107,107);
+}
+#headMsg{
+	background-image: url(../img/icon/header_top_tel.png);
+	background-size: 170px;
+	background-repeat: no-repeat;
+	background-position: 1em -2px;
+	float: right;
+}
+#mobileShop{
+	background-image: url(../img/icon/mob_shop_ico.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-left: 1.3em;
+}
+#msgLeftPart{
+	position: relative;
+	right: 14em;
+}
+#care{
+	width: 62px;
+	line-height: 24px;
+	text-align: right;
+	background-image: url(../img/icon/bg_flbtn.png);
+	background-repeat: no-repeat;
+}
