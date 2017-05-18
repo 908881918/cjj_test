@@ -12,3 +12,9 @@ $(document).ready(function(){
 	});
 
 });
+/*
+ * 输入验证
+ */
+$("#goodsMsg input").keyup(function(e){  
+           e.target.value=e.target.value.replace(/\D/g,"");
+});

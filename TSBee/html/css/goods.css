@@ -20,7 +20,7 @@ img{vertical-align:top;border:0;}
 /*
  * 放大镜样式
  */
-.box{width:1000px;}
+.box{width:400px;display: inline-block;}
 .tb-pic a{display:table-cell;text-align:center;vertical-align:middle;}
 .tb-pic a img{vertical-align:middle;}
 .tb-pic a{*display:block;*font-family:Arial;*line-height:1;}
@@ -40,9 +40,6 @@ div.zoomMask{position:absolute;background:url("images/mask.png") repeat scroll 0
 .tb-s40 img{
 	width: 60px;
 }
-body{
-	margin-bottom: 1000px;
-}
 header{
 	height: 16px;
 	background-color: rgb(247,247,247);
@@ -54,6 +51,9 @@ header{
 header *{
 	display: inline-block;
 	color: rgb(107,107,107);
+}
+#theBody{
+	width: 1000px;
 }
 #headMsg{
 	background-image: url(../img/icon/header_top_tel.png);
@@ -72,12 +72,31 @@ header *{
 	position: relative;
 	right: 14em;
 }
+#sinaWeb{
+	margin-right: 25px;
+}
 #care{
 	width: 62px;
 	line-height: 24px;
 	text-align: right;
+	margin-left: 10px;
 	background-image: url(../img/icon/bg_flbtn.png);
 	background-repeat: no-repeat;
+}
+#care a{
+	height: 20px;
+	padding-left: 20px;
+	display: inline-block;
+	background-image: url(../img/icon/bg_flbtn.png);
+	background-position: -190px 5px;
+	background-repeat: no-repeat;
+}
+#toWeb{
+	line-height: 18px;
+	border: 1px solid #ecd181;
+	border-radius: 2px;
+	background: #fcf8e9;
+    background: -webkit-linear-gradient(top,#fef7df,#f9f9f6);
 }
 #seachHead{
 	width: 1000px;
@@ -143,6 +162,7 @@ nav{
 #allCate{
 	position: absolute;
 	top: 5px;
+	z-index:1000;
 }
 #allCate>*{
 	display: block;
@@ -203,6 +223,115 @@ nav{
 	border-bottom: solid 1px lightgray;
 	color: #888888;
 }
+#goodsMsg{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 26px;
+	width: 560px;
+}
+#goodsMsg h1{
+	font-size: 14px;
+	margin-bottom: 0.8em;
+}
+#price{
+	width: 540px;
+	padding: 10px;
+	line-height: 28px;
+	font-size: 12px;
+	background-image: url(../img/icon/bg.png);
+	color: #646464;
+}
+#price del{
+	margin-right: 5em;
+}
+#price span{
+	color: red;
+	font-size: 16px;
+}
+#sale{
+	margin-top: 3px;
+	padding: 15px 0;
+	font-size: 12px;
+	color: #646464;
+	border-bottom: solid 1px lightgray;
+	border-top: solid 1px lightgray;
+}
+#sale img{
+	vertical-align: baseline;
+}
+#sale p{
+	line-height: 30px;
+}
+#goodsNum{
+	border: 1px solid #ccc;
+    margin: 17px 0 8px;
+    padding: 12px;
+    width: 90%;
+    font-size: 12px;
+    color: #646464;
+}
+#goodsNum input{
+	text-align: center;    
+	height: 24px;
+    border: 1px solid #ccc;
+    width: 50px;
+    margin: 12px 6px 10px 0px;
+}
+#buyerCtrl{
+	padding: 20px 0;
+}
+#buyerCtrl a{
+	font-size: 14px;
+	display: inline-block;
+	line-height: 1.5em;
+	margin-right: 15px;
+	border: solid thin black;
+	line-height: 28px;
+	color: white;
+	text-align: center;
+}
+#pay{
+	background-color: red;
+	width: 104px;
+}
+#getCar{
+	background-color: orangered;
+	width: 104px;
+}
+#collection{
+	background-color: #38a4df;
+	width: 59px;
+}
+#share{
+	line-height: 24px;
+	font-size: 14px;
+	color: #646464;
+}
+#share a{
+	display: inline-block;
+	margin: 6px 6px 6px 0;
+	height: 24px;
+	width: 25px;
+	background-image: url(../img/icon/icons_2_24.png);
+	background-repeat: no-repeat;
+	vertical-align: bottom;
+}
+#share a:nth-child(1){
+	background-position: 0 -51px;	
+}
+#share a:nth-child(2){
+	background-position: 0 -104px;	
+}
+#share a:nth-child(3){
+	background-position: 0 -260px;	
+}
+#share a:nth-child(4){
+	background-position: 0 -208px;	
+}
+#share a:nth-child(5){
+	background-position: 0 -1612px;	
+}
+
 
 
 @media only screen and (min-width: 1000px){
@@ -210,7 +339,6 @@ nav{
 		width: 100vw;
 	}
 	#theBody{
-		width: 1000px;
 		margin: 0 auto;
 	}
 }
