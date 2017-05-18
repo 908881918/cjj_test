@@ -331,14 +331,59 @@ nav{
 #share a:nth-child(5){
 	background-position: 0 -1612px;	
 }
-
+#goodsDetail{
+	height: 30px;
+	width: 1000px;
+	margin-top: 15px;
+	border-top: solid medium red;
+	border-bottom: solid 1px lightgray;
+	border-right:  solid 1px lightgray;
+	font-size: 12px;
+	margin-bottom: 15px;
+}
+#goodsDetail p:not(:last-child){
+	display: inline-block;
+	line-height: 30px;
+	width: 140px;
+	text-align: center;
+	border-right:  solid 1px lightgray;
+}
+.on{
+	background-color: red;
+	color: white;
+	font-weight: bold;
+}
+#goodsDetail p:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+#goodsDetail a{
+	display: inline-block;
+	line-height: 24px;
+	width: 72px;
+	margin: 3px 20px 0 0;
+	color: white;
+	text-align: center;
+	border: solid thin black;
+	background-color: orangered;
+	float: right;
+}
 
 
 @media only screen and (min-width: 1000px){
+	body{
+		overflow-x: hidden;
+		background-image: url(../img/icon/body_bg2.jpg);
+		background-position: 0 200px;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 	header{
 		width: 100vw;
 	}
 	#theBody{
+		background-color: white;
 		margin: 0 auto;
+		padding: 0 2px;
 	}
 }
