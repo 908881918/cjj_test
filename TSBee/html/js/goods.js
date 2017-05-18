@@ -18,3 +18,23 @@ $(document).ready(function(){
 $("#goodsMsg input").keyup(function(e){  
            e.target.value=e.target.value.replace(/\D/g,"");
 });
+/*
+ * 详情控制
+ */
+$("#detailList").click(function(e){
+	if(e.target.tagName=="P"){
+		var p=document.getElementById("detailList").getElementsByTagName("p"),
+		li=document.getElementById("goodsDetail").getElementsByTagName("li"),
+		len=p.length;
+		for(var i=0;i<len;i++){
+			if(e.target==p[i]){
+				p[i].classList.add("on");
+				li[i].hidden=false;
+			}
+			else{
+				p[i].classList.remove("on");
+				li[i].hidden=true;
+			}
+		}
+	}
+});

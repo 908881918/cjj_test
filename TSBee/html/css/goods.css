@@ -9,7 +9,7 @@
 :focus{
 	outline: none;
 }
-p{
+p,ul{
 	-webkit-margin-before: 0px;
 	-webkit-margin-after: 0px;
 	-webkit-margin-start: 0px;
@@ -331,7 +331,7 @@ nav{
 #share a:nth-child(5){
 	background-position: 0 -1612px;	
 }
-#goodsDetail{
+#detailList{
 	height: 30px;
 	width: 1000px;
 	margin-top: 15px;
@@ -341,7 +341,7 @@ nav{
 	font-size: 12px;
 	margin-bottom: 15px;
 }
-#goodsDetail p:not(:last-child){
+#detailList p:not(:last-child){
 	display: inline-block;
 	line-height: 30px;
 	width: 140px;
@@ -353,11 +353,11 @@ nav{
 	color: white;
 	font-weight: bold;
 }
-#goodsDetail p:hover{
+#detailList p:hover{
 	text-decoration: underline;
 	cursor: pointer;
 }
-#goodsDetail a{
+#detailList a{
 	display: inline-block;
 	line-height: 24px;
 	width: 72px;
@@ -368,6 +368,91 @@ nav{
 	background-color: orangered;
 	float: right;
 }
+#goodsDetail{
+	display: inline-block;
+	font-size: 14px;
+	text-align: center;
+	width: 750px;
+	margin-top: 10px;
+}
+#goodsDetail li:first-child>h1{
+	background-color: #f3f3f3;
+	font-size: 12px;
+	line-height: 25px;
+	text-align: start;
+	padding-left: 10px;
+}
+#goodsDetail li:first-child>p{
+	text-align: left;
+	font-size: 18px;
+	color: red;
+	font-weight: bolder;
+}
+#goodsDetail li:first-child>img{
+	width: 750px;
+}
+#aside{
+	vertical-align: top;
+	display: inline-block;
+	width: 235px;
+	margin-left: 10px;
+}
+#menuList{
+	background-color: #e9e9e9;
+	padding-bottom: 0.6em;
+	margin-bottom: 1em;
+}
+.asideTitle{
+	font-size: 14px;
+	line-height: 33px;
+	padding-left: 15px;
+	border-bottom:  1px solid #939392;
+	background-color: #e9e9e9;
+}
+#menuList li{
+	font-size: 12px;
+	line-height: 33px;
+	padding-left: 15px;
+	border-bottom: 1px solid #d5d5d5;
+}
+#menuList li:before{
+	content: "-";
+}
+#menuList a:hover{
+	text-decoration:underline;
+	color: red;
+}
+#sameGoods,#history{
+	border: solid 1px lightgray;
+	margin-bottom: 1em;
+}
+.goods{
+	border-bottom: solid 1px lightgray;
+	width: 206px;
+	padding: 13.5px;
+	font-size: 12px;
+	text-align: center;
+}
+.goods:hover{
+	background-color: #e9e9e9;
+}
+.goods img{
+	width: 206px;
+}
+.theTitle{
+	line-height: 32px;
+	height: 32px;
+	overflow: hidden;
+}
+.theTitle:hover{
+	text-decoration: underline;
+}
+.goods span{
+	color: red;
+}
+
+
+
 
 
 @media only screen and (min-width: 1000px){
