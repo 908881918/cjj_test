@@ -391,6 +391,29 @@ nav{
 #goodsDetail li:first-child>img{
 	width: 750px;
 }
+#goodsDetail li:first-child table{
+	border-collapse: collapse;
+	border: solid 1px lightgrey;
+}
+#goodsDetail li:first-child caption{
+	border: solid 1px lightgrey;
+	border-bottom: none;
+	line-height: 60px;
+	font-size: 40px;
+	font-weight: bolder;
+	color: #ff9900;
+}
+#goodsDetail li:first-child tr:first-child{
+	border-bottom: solid 1px lightgrey;
+	font-size: 15px;
+	height: 188px;
+	line-height: 30px;
+}
+#goodsDetail li:first-child tr:last-child{
+	font-size: 12px;
+	vertical-align: top;
+	height: 1629px;
+}
 #aside{
 	vertical-align: top;
 	display: inline-block;
