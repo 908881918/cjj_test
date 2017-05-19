@@ -1,0 +1,23 @@
+/*
+ * 在线客服弹出与关闭效果
+ */
+$("#commitOnline").mouseenter(function(){
+	$("#scrollOut").animate({
+		width:"show",
+		borderLeft:"show",
+		borderRight:"show",
+		paddingLeft:"show",
+		paddingRight:"show"
+	},
+		{duration:50});
+});
+$("#close").click(function(){
+	$("#scrollOut").animate({
+		width:"hide",
+		borderLeft:"hide",
+		borderRight:"hide",
+		paddingLeft:"hide",
+		paddingRight:"hide"
+		},
+		{duration:50});
+});
