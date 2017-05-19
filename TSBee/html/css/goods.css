@@ -40,6 +40,9 @@ div.zoomMask{position:absolute;background:url("images/mask.png") repeat scroll 0
 .tb-s40 img{
 	width: 60px;
 }
+/*
+ * 头部样式
+ */
 header{
 	height: 16px;
 	background-color: rgb(247,247,247);
@@ -98,6 +101,9 @@ header *{
 	background: #fcf8e9;
     background: -webkit-linear-gradient(top,#fef7df,#f9f9f6);
 }
+/*
+ * 内容样式
+ */
 #seachHead{
 	width: 1000px;
 	background-image: url(../img/icon/header_bg.png);
@@ -340,6 +346,11 @@ nav{
 	border-right:  solid 1px lightgray;
 	font-size: 12px;
 	margin-bottom: 15px;
+	background-color: white;
+}
+.fixed{
+	position: fixed;
+	top: -15px;
 }
 #detailList p:not(:last-child){
 	display: inline-block;
@@ -388,6 +399,12 @@ nav{
 	color: red;
 	font-weight: bolder;
 }
+#goodsDetail li:first-child>p:last-child{
+	text-align: end;
+	font-size: 18px;
+	color: #888888;
+	font-weight: bolder;
+}
 #goodsDetail li:first-child>img{
 	width: 750px;
 }
@@ -415,8 +432,7 @@ nav{
 	height: 1629px;
 }
 #aside{
-	vertical-align: top;
-	display: inline-block;
+	float: right;
 	width: 235px;
 	margin-left: 10px;
 }
@@ -473,11 +489,100 @@ nav{
 .goods span{
 	color: red;
 }
-
-
-
-
-
+#friendNav{
+	width: 1000px;
+	margin-top: 1em;
+	padding-bottom: 68px;
+	background-image: url(../img/icon/foot_img.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	clear: both;
+}
+#friendLink{
+	height: 80px;
+	background-image: url(../img/icon/footer_link_bg.png);
+	background-repeat: no-repeat;
+}
+#friendLink a{
+	border-right: solid 1px lightgray;
+	color: #555;
+	font-size: 12px;
+	margin-right: 2em;
+	padding-right: 5px;
+	position: relative;
+	left: 140px;
+	top: 1.3em;
+}
+#friendLink a:hover{
+	color: red;
+}
+#guide{
+	height: 188px;
+	margin: 10px 0;
+	padding-top: 8px;
+	padding-left: 250px;
+	border-top: dotted 1px gray;
+	border-bottom: dotted 1px gray;
+	background-image: url(../img/icon/footer_service.png);
+	background-repeat: no-repeat;
+}
+#guide>div{
+	background-image: url(../img/icon/foot_help_dt.png);
+	background-repeat: no-repeat;
+	padding-top: 40px;
+}
+.guide{
+	float: left;
+	font-size: 12px;
+	line-height: 26px;
+}
+.guide a{
+	color: #8A8A8A;
+}
+.guide a:hover{
+	text-decoration: underline;
+}
+.guide li:before{
+	content: "》";
+	color: orange;
+}
+.guide:nth-child(1){
+	width: 160px;
+}
+.guide:nth-child(2){
+	width: 210px;
+}
+.guide:nth-child(3),.guide:nth-child(4){
+	width: 190px;
+}
+/*
+ * 脚部样式
+ */
+footer{
+	width: 750px;
+	height: 140px;
+	padding-left: 250px;
+	background-image: url(../img/icon/foot_logo.png);
+	background-repeat: no-repeat;
+	background-position-x: 55px;
+}
+footer p{
+	font-size: 12px;
+	line-height: 1.5em;
+	color: #686868;
+}
+footer a{
+	color: #686868;
+}
+footer a:hover{
+	text-decoration: underline;
+}
+footer img{
+	vertical-align: middle;
+}
+/*
+ * 
+ */
 @media only screen and (min-width: 1000px){
 	body{
 		overflow-x: hidden;
@@ -489,9 +594,8 @@ nav{
 	header{
 		width: 100vw;
 	}
-	#theBody{
+	#theBody,footer{
 		background-color: white;
 		margin: 0 auto;
-		padding: 0 2px;
 	}
 }

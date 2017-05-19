@@ -16,10 +16,10 @@ $(document).ready(function(){
  * 输入验证
  */
 $("#goodsMsg input").keyup(function(e){  
-           e.target.value=e.target.value.replace(/\D/g,"");
+           this.value=this.value.replace(/\D/g,"");
 });
 /*
- * 详情控制
+ * 详情控制按钮以及滚屏指定位置后固定视口上
  */
 $("#detailList").click(function(e){
 	if(e.target.tagName=="P"){
@@ -38,3 +38,12 @@ $("#detailList").click(function(e){
 		}
 	}
 });
+$(window).scroll(function(){
+	var detail=$("#detailList")
+	if($(window).scrollTop()>=760){
+		detail.addClass("fixed");
+	}
+	else if(detail.hasClass("fixed")){
+		detail.removeClass("fixed");
+	}
+})
