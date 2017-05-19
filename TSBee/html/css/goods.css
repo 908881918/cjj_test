@@ -35,7 +35,7 @@ img{vertical-align:top;border:0;}
 .tb-thumb .tb-selected{background:none repeat scroll 0 0 #C30008;height:60px;width:60px;padding:2px;}
 .tb-thumb .tb-selected div{background-color:#FFFFFF;border:medium none;}
 .tb-thumb li div{border:1px solid #CDCDCD;}
-div.zoomDiv{z-index:999;position:absolute;top:0px;left:0px;width:580px;height:580px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+div.zoomDiv{z-index:99;position:absolute;top:0px;left:0px;width:580px;height:580px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
 div.zoomMask{position:absolute;background:url("images/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
 .tb-s40 img{
 	width: 60px;
@@ -44,16 +44,21 @@ div.zoomMask{position:absolute;background:url("images/mask.png") repeat scroll 0
  * 头部样式
  */
 header{
-	height: 16px;
+	height: 30px;
 	background-color: rgb(247,247,247);
 	font-size: 12px;
 	width: 1000px;
 	border-bottom: solid thin lightgray;
-	padding: 7px 0px;
+	text-align: center;
 }
 header *{
 	display: inline-block;
 	color: rgb(107,107,107);
+}
+#sign{
+	position: relative;
+	right: 18.5em;
+	line-height: 30px;
 }
 #theBody{
 	width: 1000px;
@@ -63,7 +68,9 @@ header *{
 	background-size: 170px;
 	background-repeat: no-repeat;
 	background-position: 1em -2px;
-	float: right;
+	position: relative;
+	left: 18em;
+	margin-top: 4px;
 }
 #mobileShop{
 	background-image: url(../img/icon/mob_shop_ico.png);
@@ -168,7 +175,7 @@ nav{
 #allCate{
 	position: absolute;
 	top: 5px;
-	z-index:1000;
+	z-index:9999;
 }
 #allCate>*{
 	display: block;
@@ -349,6 +356,7 @@ nav{
 	background-color: white;
 }
 .fixed{
+	z-index: 9;
 	position: fixed;
 	top: -15px;
 }
@@ -581,8 +589,47 @@ footer img{
 	vertical-align: middle;
 }
 /*
- * 
+ * 在线客服样式
  */
+aside{
+	position: fixed;
+	right: 0;
+	top: 7em;
+	z-index: 999;
+}
+#commitOnline{
+	float: left;
+	width: 26px;
+	height: 99px;
+	margin-top: 1.2em;
+	background-image: url(../img/icon/r1.gif);
+	cursor: pointer;
+}
+#scrollOut{
+	float: right;
+	display: none;
+	width: 135px;
+	height: 238px;
+	background-color: white;
+	border: solid 1px lightgray;
+}
+#asideTop{
+	width: 135px;
+	height: 33px;
+	background-image: url(../img/icon/bbqq_03.png);
+}
+#close{
+	float: right;
+	margin: 0.3em;
+	cursor: pointer;
+}
+#scrollOut li{
+	width: 125px;
+	line-height: 30px;
+	padding-top: 5px;
+	margin: 0px 4px 0 6px;
+	background-color: #FFF7C9;
+}
 @media only screen and (min-width: 1000px){
 	body{
 		overflow-x: hidden;
