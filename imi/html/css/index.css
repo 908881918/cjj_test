@@ -1,6 +1,7 @@
 	body{
 		margin: 0;
 		padding-top: 13%;
+		font-size: 16px;
 	}
 	:link,:visited{
 		color:white;
@@ -16,27 +17,11 @@
 		padding-top: 4.4%;
 		padding-bottom: 1.5em;
 	}
-	a:nth-child(1)>img{
-	width:37.8947%;
-	}
-	a:nth-child(2)>img{
-	width:47.7193%;
-	}
-	a:nth-child(3)>img{
-	width: 45.614%;
-	}
-	a:nth-child(4)>img{
-	width: 49.1228%;
-	}
-	a:nth-child(5)>img{
-	width: 40.7017%;
-	}
-	a:nth-child(6)>img{
-	width: 50.5262%;
+	a img{
+		height: 54px;
 	}
 	nav p{
 		margin-top: 4%;
-		font-size: 4.2vw;
 	}
 	ul{
 		width: 100%;

@@ -6,13 +6,13 @@ table{
 	margin: 5% 0%;
 	border-collapse: collapse;
 	text-align: center;
-	font-size: 4vw;
+	font-size: 16px;
 	line-height: 1.6em;
 	table-layout: fixed;
 	font-weight: bold;
 }
 caption{
-	font-size: 6vw;
+	font-size: 20px;
 	color: darkblue;
 }
 tr:first-child th:not(:first-child){
@@ -37,25 +37,31 @@ tr:not(:nth-child(3n+1)) td{
 	width: 100%;
 	color: red;
 	text-align: center;
-	font-size: 5vw;
+	font-size: 14px;
 	margin-bottom: 3%;
 }
 #getNum button{
 	width: 14%;
 	margin-left: 4%;
 	margin-bottom: 3%;
-	font-size: 5vw;
+	font-size: 14px;
 }
 #functionKey{
 	width: 90%;
-	margin: 4%;
+	margin: 0 auto;
 }
 #functionKey button{
-	width: 18%;
-	margin-left: 1%;
+	width: 16%;
+	margin-left: 2.2%;
 	line-height: 2em;
-	font-size: 3vw;
+	font-size: 12px;
 }
 td{
 	overflow: hidden;
+}
+@media only screen and (min-width: 360px) {
+	body{
+		width: 360px;
+		margin: 0 auto;
+	}
 }
