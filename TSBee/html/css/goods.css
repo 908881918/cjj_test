@@ -103,10 +103,22 @@ header *{
 }
 #toWeb{
 	line-height: 18px;
+	margin-left: 3px;
+	padding: 0 2px;
 	border: 1px solid #ecd181;
 	border-radius: 2px;
 	background: #fcf8e9;
     background: -webkit-linear-gradient(top,#fef7df,#f9f9f6);
+    position: relative;
+}
+#toWeb span{
+	height: 7px;
+	width: 12px;
+	background-image: url(../img/icon/bg_flbtn.png);
+	background-position: -190px -16px;
+	position: absolute;
+	left: -6px;
+	top: 5.3px;
 }
 /*
  * 内容样式
