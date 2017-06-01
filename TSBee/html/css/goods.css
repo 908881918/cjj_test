@@ -406,6 +406,9 @@ nav{
 	width: 750px;
 	margin-top: 10px;
 }
+#goodsDetail li:not(:first-child){
+	display: none;
+}
 #goodsDetail li:first-child>h1{
 	background-color: #f3f3f3;
 	font-size: 12px;

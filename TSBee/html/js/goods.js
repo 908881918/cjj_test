@@ -23,17 +23,13 @@ $("#goodsMsg input").keyup(function(e){
  */
 $("#detailList").click(function(e){
 	if(e.target.tagName=="P"){
-		var p=document.getElementById("detailList").getElementsByTagName("p"),
-		li=document.getElementById("goodsDetail").getElementsByTagName("li"),
-		len=p.length;
+		var p=$("#detailList p").removeClass("on");
+		var li=$("#goodsDetail li").css("display","none");
+		var len=p.size();
+		$(e.target).addClass("on");
 		for(var i=0;i<len;i++){
-			if(e.target==p[i]){
-				p[i].classList.add("on");
-				li[i].hidden=false;
-			}
-			else{
-				p[i].classList.remove("on");
-				li[i].hidden=true;
+			if(p.eq(i).hasClass("on")){
+				li.eq(i).css("display","block");
 			}
 		}
 	}
