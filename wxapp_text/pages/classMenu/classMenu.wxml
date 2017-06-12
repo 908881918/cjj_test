@@ -1,0 +1,14 @@
+<!--classMenu.wxml-->
+<view id="classMenu">
+  <view id="turnBack" bindtap="backToIndex">返回</view>
+  <view class="classList" wx:for="{{classification}}" wx:for-item="i">
+    <view class="classTitle">
+      {{i.title}}
+      <view class="getAll">查看全部</view>
+    </view>
+    <view wx:for="{{i.classItem}}">
+      <view class="classOdd" wx:if="{{index%2==0}}">{{item}}</view>
+      <view class="classEven" wx:if="{{index%2!=0}}">{{item}}</view>
+    </view>
+  </view>
+</view>

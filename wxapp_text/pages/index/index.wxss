@@ -1,0 +1,82 @@
+/**index.wxss**/
+#header{
+  height: 118px;
+  background-image: url('https://img.alicdn.com/tps/i3/TB1K2gEHXXXXXaeXVXXrVZt0FXX-640-200.jpg_q90.jpg');
+  background-size: cover;
+  position: relative;
+}
+#shopMsg{
+  position: absolute;
+  bottom: 0px;
+}
+#headIcon{
+  width: 66px;
+  height: 66px;
+  float: left;
+}
+#headTitle{
+  float: left;
+  vertical-align: top;
+  font-size: 14px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#headMenu{
+  width: 116px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  float: right;
+}
+#classification{
+  font-size: 16px;
+  width: 112px;
+  line-height: 3em;
+}
+#collection1,#collection2{
+  display: inline-block;
+  width: 56px;
+  height: 29px;
+  vertical-align: top;
+}
+#collection1{
+  padding-top: 17px;
+  border-right: solid 1px rgb(200,36,40);
+  background-color: rgb(221,39,39);
+}
+#collection2{
+  padding: 11px 0px 6px 0px;
+  background-color: rgb(208,2,27);
+}
+#nav{
+  border-bottom: solid medium lightgray;
+}
+#navIndex{
+  color: rgb(221, 39,39);
+  border-bottom: solid medium rgb(221, 39,39);
+}
+.SNavTitle,#navIndex{
+  font-size: 14px;
+  display: inline-block;
+  width: 187.5rpx;
+  text-align: center;
+  line-height: 3em;
+}
+swiper,#rollImg{
+  width: 750rpx;
+  height: 376rpx;
+}
+.recommend{
+  vertical-align: top;
+  width: 720rpx;
+  height: 361rpx;
+  padding: 15rpx;
+  border-bottom: solid 12px rgb(238, 238, 238);
+}
+#AllGoods{
+  font-size: 14px;
+  line-height: 3em;
+  text-align: center;
+  border-bottom: solid 12px rgb(238, 238, 238);
+}
