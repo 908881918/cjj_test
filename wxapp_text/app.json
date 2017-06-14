@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/classMenu/classMenu"
+    "pages/classMenu/classMenu",
+    "pages/allGoods/allGoods"
   ],
   "window": {
     "backgroundTextStyle": "light",

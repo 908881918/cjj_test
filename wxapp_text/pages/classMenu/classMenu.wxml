@@ -1,6 +1,6 @@
 <!--classMenu.wxml-->
 <view id="classMenu">
-  <view id="turnBack" bindtap="backToIndex">返回</view>
+  <navigator id="turnBack" open-type="navigateBack" delta="1" >返回</navigator>
   <view class="classList" wx:for="{{classification}}" wx:for-item="i">
     <view class="classTitle">
       {{i.title}}

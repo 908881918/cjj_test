@@ -3,15 +3,23 @@
 var app = getApp()
 Page({
   data: {
-   shopNav:[
+    getColl:[
+      "收藏",
+      false
+    ],
+    collNum:0,
+    shopNav:[
      {
-       title: "全部商品"
+        title: "全部商品",
+        url: "../allGoods/allGoods"
      },
      {
-       title: "上新"
+       title: "上新",
+       url:"#"
      },
      {
-       title: "店铺活动"
+       title: "店铺活动",
+       url: "#"
      }
    ],
    rollPart:{
@@ -32,15 +40,26 @@ Page({
      "https://gw.alicdn.com/imgextra/i2/803121383/TB2GI3BaCBjpuFjSsplXXa5MVXa_!!803121383-0-shop_design.jpg_970x970q50s150.jpg_.webp"
    ]
   },
-  classification:function(){
-    wx.redirectTo({
-      url: '../classMenu/classMenu',
-    })
-  },
   onShareAppMessage:function(){
     return {
        title:"this is Text",
        path:this.route,
+    }
+  },
+  onClick:function(event){
+    if(!this.data.getColl[1]){
+      this.setData({
+        "getColl[0]": "已收藏",
+        "getColl[1]": true,
+        collNum: this.data.collNum+1
+      });
+    }
+    else{
+      this.setData({
+        "getColl[0]": "收藏",
+        "getColl[1]": false,
+        collNum: this.data.collNum-1
+      });
     }
   }
 })
