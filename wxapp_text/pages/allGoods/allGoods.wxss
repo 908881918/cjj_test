@@ -1,0 +1,51 @@
+/* allGoods.wxss */
+#topPart{
+  background-color: black;
+  height: 2em;
+  position: relative;
+  border-bottom: solid 3px lightgray;
+}
+#backIndex,#classification{
+  font-size: 14px;
+  line-height: 3em; 
+  color: white;
+  position: absolute;
+}
+#backIndex{
+  left: 15px;
+}
+#classification{
+  right: 15px;
+}
+.goods1,.goods2{
+  float: left;
+  font-size: 12px;
+  line-height: 1.5em;
+  width: 369.5rpx;
+  border-bottom: solid 6rpx lightgray;
+}
+.goods1{
+  border-right: solid 6rpx lightgray;
+}
+.goodsImg{
+  width: 369.5rpx;
+  height: 369.5rpx;
+}
+.goodsTitle{
+  padding: 0 0.8em;
+  height: 3em;
+  margin-bottom: 0.5em;
+  overflow: hidden;
+}
+.price,.sale{
+  display: inline-block;
+  padding: 0 0.8em;
+  margin: 0.5em 0;
+  color: red;
+  font-size: 14px;
+}
+.sale{
+  color: gray;
+  font-size: 10px;
+  float: right;
+}

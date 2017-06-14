@@ -1,0 +1,11 @@
+<!--allGoods.wxml-->
+<view id="topPart">
+  <navigator url="../index/index" id="backIndex" open-type="redirect">首页</navigator>
+  <navigator url="../classMenu/classMenu" id="classification" open-type="navigate">分类</navigator>
+</view>
+<view class="{{index%2==0?goodsClass[0]:goodsClass[1]}}" wx:for="{{goods}}" wx:for-item="i" >
+  <image src="{{i.img}}" class="goodsImg" mode="aspectFit"></image>
+  <view class="goodsTitle">{{i.title}}</view>
+  <view class="price">¥{{i.price}}</view>
+  <view class="sale">月销笔{{i.sale}}</view>
+</view>
