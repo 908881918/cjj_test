@@ -1,2 +1,2 @@
 # cjj_test
-isText
+isTest
